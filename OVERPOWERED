@@ -1,0 +1,159 @@
+--PrisonLife--
+if game.PlaceId == 155615604 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("PrisonLife Hub - v1.0.5", "Synapse")
+
+    --Main Settings--
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main Tab")
+
+    MainSection:NewButton("Infinite Yield", "Execute Infinite Yield Script.", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/Infinity-Yield-Project/main/Infinity%20Yield%20Script"), true))()
+    end)
+
+    MainSection:NewToggle("Hype Character", "Made Your Character To Hyper!", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end        
+    end)
+
+
+    MainSection:NewButton("Admin Gui", "Execute AdminCommand Gui", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/CmdGui/main/CMDs"), true))()
+    end)
+
+
+    --LocalPlayer Settings--
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("LocalPlayer Effects")
+
+
+    PlayerSection:NewSlider("WalkSpeed", "Set WalkSpeed", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("JumpPower", "Set JumpPower", 500, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset Character", "Reset WalkSpeed & JumpPower", function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end)
+
+
+    --Fakes Settings--
+    local FakeScripts = Window:NewTab("FakeEffect Scripts")
+    local FakeScriptsSection = FakeScripts:NewSection("FakeEffect Scripts")
+
+    FakeScriptsSection:NewButton("Chat Spoofer", "Let Chat For Fake!", function()
+        loadstring(game:HttpGet(("https://pastebin.com/raw/djBfk8Li"), true))()
+    end)
+
+
+    --Games
+    local Games = Window:NewTab("Games")
+    local GamesSection = Games:NewSection("Find Allowed Games")
+        
+    GamesSection:NewLabel("#1 : PrisonLife")
+    GamesSection:NewLabel("#2 : JailBreak")
+    GamesSection:NewLabel("#3 : not yet!")
+
+
+    --Others Settings--
+    local Others = Window:NewTab("Others")
+    local OthersSection = Others:NewSection("Others Tab")
+
+    OthersSection:NewButton("Leave", "Leave This Server", function()
+        game.Players.LocalPlayer:Kick("You Leaved.")
+    end)
+
+
+    --Credits Settings--
+    local Credits = Window:NewTab("Credits")
+    local CreditsSection = Credits:NewSection("Credits Tab")
+
+    CreditsSection:NewLabel("Created by RobloxAlpha#4338")
+
+
+    --------JailBreak--------
+elseif game.PlaceId == 606849621 then
+    local Library2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window2 = Library2.CreateLib("JailBreak Hub - v1.0.5", "Synapse")
+
+
+    --Main Settings--
+
+    local Main2 = Window2:NewTab("Main")
+    local MainSection2 = Main2:NewSection("Main Tab")
+    
+    MainSection2:NewButton("Infinite Yield", "Execute Infinite Yield Script.", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/Infinity-Yield-Project/main/Infinity%20Yield%20Script"), true))()
+    end)
+    
+    MainSection2:NewToggle("Hype Character", "Made Your Character To Hyper!", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end        
+    end)
+
+    
+    --LocalPlayer Settings--
+    local Player2 = Window2:NewTab("Player")
+    local PlayerSection2 = Player2:NewSection("LocalPlayer Effects")
+    
+    
+    PlayerSection2:NewSlider("WalkSpeed", "Set WalkSpeed", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+    
+    PlayerSection2:NewSlider("JumpPower", "Set JumpPower", 500, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+    
+    PlayerSection2:NewButton("Reset Character", "Reset WalkSpeed & JumpPower", function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end)
+    
+    
+    --Fakes Settings--
+    local FakeScripts2 = Window2:NewTab("FakeEffect Scripts")
+    local FakeScriptsSection2 = FakeScripts2:NewSection("FakeEffect Scripts")
+    
+    FakeScriptsSection2:NewButton("Chat Spoofer", "Let Chat For Fake!", function()
+        loadstring(game:HttpGet(("https://pastebin.com/raw/djBfk8Li"), true))()
+    end)
+
+
+    --Games
+    local Games2 = Window2:NewTab("Games")
+    local GamesSection2 = Games2:NewSection("Find Allowed Games")
+            
+    GamesSection2:NewLabel("#1 : PrisonLife")
+    GamesSection2:NewLabel("#2 : JailBreak")
+    GamesSection2:NewLabel("#3 : not yet!")
+    
+
+    --Others Settings--
+    local Others2 = Window2:NewTab("Others")
+    local OthersSection2 = Others2:NewSection("Others Tab")
+        
+    OthersSection2:NewButton("Leave", "Leave This Server", function()
+        game.Players.LocalPlayer:Kick("You Leaved.")
+    end)
+    
+    --Credits Settings--
+    local Credits2 = Window2:NewTab("Credits")
+    local CreditsSection2 = Credits2:NewSection("Credits Tab")
+    
+    CreditsSection2:NewLabel("Created by RobloxAlpha#4338")
+end
